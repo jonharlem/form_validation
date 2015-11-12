@@ -49,7 +49,7 @@
 			<fieldset class="three">
 				<legend>Sauce</legend>
 
-				<input type="radio" name="size" value="tomato" />
+				<input type="radio" name="size" value="sausauge" />
 				<label>tomato</label>
 				<br>
 				
@@ -63,7 +63,81 @@
 
 			</fieldset>
 		</div>
+<!-- TOPPINGS -->
+		<fieldset class="toppings">
 
+			<legend>Toppings</legend>
+
+			<div class="container" id="left">
+
+				<input type="radio" name="size" value="sausage" />
+				<label>sausage</label>
+				<br>
+				
+				<input type="radio" name="size" value="pepperoni" />
+				<label>pepperoni</label>
+				<br>
+
+				<input type="radio" name="size" value="salami" />
+				<label>salami</label>
+				<br>
+
+				<input type="radio" name="size" value="ham" />
+				<label>ham</label>
+				<br>
+
+				<input type="radio" name="size" value="feta" />
+				<label>feta cheese</label>
+				<br>
+
+				<input type="radio" name="size" value="soy" />
+				<label>soy cheese</label>
+				<br>
+
+			</div>
+
+			<div class="container" id="center">
+
+				<input type="radio" name="size" value="banana" />
+				<label>banana peppers</label>
+				<br>
+
+				<input type="radio" name="size" value="jalapeno" />
+				<label>jalapeno</label>
+				<br>
+
+				<input type="radio" name="size" value="onion" />
+				<label>onion</label>
+				<br>
+
+				<input type="radio" name="size" value="pineapple" />
+				<label>pineapple</label>
+				<br>
+
+				<input type="radio" name="size" value="shrooms" />
+				<label>shrooms</label>
+				<br>
+
+			</div>
+
+			<div class="container" id="right">
+
+				<input type="radio" name="size" value="chicken" />
+				<label>chicken (+$0.50 extra)</label>
+				<br>
+
+				<input type="radio" name="size" value="bacon" />
+				<label>bacon (+$0.50 extra)</label>
+				<br>
+
+			</div>
+
+			<!-- BREAK -->
+
+
+
+
+		</fieldset>
 
 		<fieldset class="name">
 			<legend>Pickup or Delivery</legend>
@@ -81,15 +155,25 @@
 			</label>
 			<br />
 
+			<label class="title" for="address">
+				<input type="email" name="phone" size="30" maxlength="30" placeholder="Address">
+			</label>
+			<br />
+
+			<label class="title" for="phone">
+				<input type="email" name="phone" size="30" maxlength="30" placeholder="Phone Number (1-415-555-5555)">
+			</label>
+			<br />
+
 			<label class="title" for="email">
 				<input type="email" name="email" size="30" maxlength="30" placeholder="Email">
 			</label>
 			<br />
-			
+
 			<label class="title" for="note">
 			</label>
 		
-			<textarea rows="5" cols="30" id="comments" placeholder="Comments"></textarea>
+			<textarea rows="5" cols="30" id="comments" placeholder="Note for the delivery guy"></textarea>
 			<br />
 			<div class="submit">
 				<input type="submit" value="Send" />

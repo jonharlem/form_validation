@@ -48,7 +48,6 @@ legend {
 }
 
 .three {
-	/*float: */
 	display: inline;
 	font-size: 20px;
 	letter-spacing: 6px;
@@ -64,6 +63,41 @@ legend {
 	margin-top: 20px;
 }
 
+/*Toppings*/
+
+.toppings {
+	display: inline;
+	font-size: 20px;
+	letter-spacing: 6px;
+	width: 95%;
+	margin-bottom: 25px;
+	border: 5px solid #DDDDDD;
+	line-height: 1em;
+	margin: auto;
+	padding: 10px;
+}
+
+.toppings input, .toppings label {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.container {
+	display: inline-block;
+	font-size: 20px;
+	letter-spacing: 6px;
+	width: 32%;
+	line-height: 1em;
+	margin: auto;
+}
+
+#left{
+	float: left;
+}
+
+#right {
+	float: right;
+}
 /*Pickup form*/
 
 .name {
