@@ -1,0 +1,123 @@
+/*Body*/
+
+body {
+	color: #fc844c;
+	font-family: "brandon-grotesque","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 47px;
+	font-weight: 500;
+	letter-spacing: 12px;
+	line-height: 1;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+/*Nav*/
+.nav {
+	background-color: #fc844c;
+	font-weight: 200;
+	margin: 0; 
+	max-height: 50px;
+	padding: 10px;
+	text-align: center;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: 5px;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+/*Form*/
+form {
+	margin-top: 10%;
+}
+legend {
+	color: #5a5854;
+	font-size: 20px;
+	letter-spacing: 6px;
+}
+
+.top {
+	display: inline-block;
+	width: 99%;
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.three {
+	/*float: */
+	display: inline;
+	font-size: 20px;
+	letter-spacing: 6px;
+	width: 25%;
+	margin-bottom: 25px;
+	border: 5px solid #DDDDDD;
+	line-height: 1em;
+	margin: auto;
+}
+
+.three input, .three label {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+/*Pickup form*/
+
+.name {
+	width: 350px;
+	margin-bottom: 100px;
+	border: 5px solid #DDDDDD;
+	line-height: 1em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+input {
+	background-color: #f2f2f2;
+	background-position: 8px 9px;
+	background-repeat: no-repeat;
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+	color: #5a5854;
+	display: block;
+	font-size: 80%;
+	padding: 3px 3px 3px 3px;
+	margin-bottom: 10px;
+}
+
+input:focus, input:hover {
+	background-color: #ffffff;
+	border: 1px solid #b1e1e4;
+}
+
+textarea {
+	background-color: #f2f2f2;
+	background-position: 8px 9px;
+	background-repeat: no-repeat;
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+	color: #5a5854;
+	display: block;
+	font-size: 80%;
+	padding: 3px 3px 3px 3px;
+	margin-bottom: 10px;
+}
+
+textarea:focus, textarea:hover {
+	background-color: #ffffff;
+	border: 1px solid #b1e1e4;
+}
+
+input[type="submit"] {
+	background-color: #88B0D7;
+	border: 1px solid #b1e1e4;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 30px;
+	margin: 10px auto 10px auto;
+	padding: 3px;
+	width: 110px;
+}
