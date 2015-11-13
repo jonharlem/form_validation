@@ -3,7 +3,7 @@
 body {
 	color: #fc844c;
 	font-family: "brandon-grotesque","Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 47px;
+	font-size: 45px;
 	font-weight: 500;
 	letter-spacing: 12px;
 	line-height: 1;
@@ -32,7 +32,7 @@ h1 {
 
 /*Form*/
 form {
-	margin-top: 10%;
+	margin-top: 2%;
 }
 legend {
 	color: #5a5854;
@@ -51,8 +51,9 @@ legend {
 	display: inline;
 	font-size: 20px;
 	letter-spacing: 6px;
-	width: 25%;
-	margin-bottom: 25px;
+	min-width: 25%;
+	max-width: 30%;
+	margin-top: 25px;
 	border: 5px solid #DDDDDD;
 	line-height: 1em;
 	margin: auto;
@@ -63,18 +64,23 @@ legend {
 	margin-top: 20px;
 }
 
+#sauce {
+	float: right;
+}
+
+#size {}
+
 /*Toppings*/
 
 .toppings {
 	display: inline;
 	font-size: 20px;
 	letter-spacing: 6px;
-	width: 95%;
+	width: 97.5%;
 	margin-bottom: 25px;
 	border: 5px solid #DDDDDD;
 	line-height: 1em;
-	margin: auto;
-	padding: 10px;
+	margin: 5px;
 }
 
 .toppings input, .toppings label {
@@ -101,7 +107,7 @@ legend {
 /*Pickup form*/
 
 .name {
-	width: 350px;
+	width: 400px;
 	margin-bottom: 100px;
 	border: 5px solid #DDDDDD;
 	line-height: 1em;
@@ -120,6 +126,12 @@ input {
 	font-size: 80%;
 	padding: 3px 3px 3px 3px;
 	margin-bottom: 10px;
+}
+
+.delivery {
+	display: inline;
+	font-size: 20px;
+	letter-spacing: 6px;
 }
 
 input:focus, input:hover {

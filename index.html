@@ -10,7 +10,7 @@
 
 	</header>
 
-	<form action="index.html" method="get">
+	<form action="index.html" method="get" id="size">
 		<div class="top">
 			<fieldset class="three">
 				<legend>Size</legend>
@@ -29,7 +29,7 @@
 
 			</fieldset>
 
-			<fieldset class="three">
+			<fieldset class="three" id="crust">
 				<legend>Crust</legend>
 
 				<input type="radio" name="size" value="white" />
@@ -46,7 +46,7 @@
 
 			</fieldset>
 
-			<fieldset class="three">
+			<fieldset class="three" id="sauce">
 				<legend>Sauce</legend>
 
 				<input type="radio" name="size" value="sausauge" />
@@ -88,10 +88,6 @@
 
 				<input type="radio" name="size" value="feta" />
 				<label>feta cheese</label>
-				<br>
-
-				<input type="radio" name="size" value="soy" />
-				<label>soy cheese</label>
 				<br>
 
 			</div>
@@ -138,47 +134,61 @@
 
 
 		</fieldset>
+		<div>
+			<div>
+			<fieldset class="name">
+				<legend>Pickup or Delivery</legend>
+				
+				<input type="radio" name="size" value="pickup" class="delivery" />
+					<label>pickup</label>
+					<br>
+				
+				<input type="radio" name="size" value="delivery" class="delivery"  />
+					<label>delivery</label>
+					<br>
 
-		<fieldset class="name">
-			<legend>Pickup or Delivery</legend>
+				<label class="title" for="name">
+					<input type="text" name="name" size="30" maxlength="25" placeholder="Name">
+				</label>
+				<br />
+
+				<label class="title" for="address">
+					<input type="email" name="phone" size="30" maxlength="30" placeholder="Address">
+				</label>
+				<br />
+
+				<label class="title" for="phone">
+					<input type="email" name="phone" size="30" maxlength="30" placeholder="Phone Number (1-415-555-5555)">
+				</label>
+				<br />
+
+				<label class="title" for="email">
+					<input type="email" name="email" size="30" maxlength="30" placeholder="Email">
+				</label>
+				<br />
+
+				<label class="title" for="note">
+				</label>
 			
-			<input type="radio" name="size" value="pickup"/>
-				<label>pickup</label>
-				<br>
+				<textarea rows="5" cols="30" id="comments" placeholder="Note for the delivery guy"></textarea>
+				<br />
+				<div class="submit">
+					<input type="submit" value="Submit" />
+				</div>	
+			</fieldset>		
+			</div>
 			
-			<input type="radio" name="size" value="delivery" />
-				<label>delivery</label>
-				<br>
-
-			<label class="title" for="name">
-				<input type="text" name="name" size="30" maxlength="25" placeholder="Name">
-			</label>
-			<br />
-
-			<label class="title" for="address">
-				<input type="email" name="phone" size="30" maxlength="30" placeholder="Address">
-			</label>
-			<br />
-
-			<label class="title" for="phone">
-				<input type="email" name="phone" size="30" maxlength="30" placeholder="Phone Number (1-415-555-5555)">
-			</label>
-			<br />
-
-			<label class="title" for="email">
-				<input type="email" name="email" size="30" maxlength="30" placeholder="Email">
-			</label>
-			<br />
-
-			<label class="title" for="note">
-			</label>
+			<div id="cost">
+				<form>
+					<legend>Total</legend>
+					
+					<div class="submit">
+						<input type="submit" value="Submit" />
+					</div>	
+				</form>
+			</div>
+		</div>
 		
-			<textarea rows="5" cols="30" id="comments" placeholder="Note for the delivery guy"></textarea>
-			<br />
-			<div class="submit">
-				<input type="submit" value="Send" />
-			</div>	
-		</fieldset>		
 	</form>
 
 </body>
