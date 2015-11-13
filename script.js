@@ -6,6 +6,7 @@
 // input[0].checked; // Get the checked status of a checkbox or radio button
 // input[0].disabled; // Get input disabled status
 
+//Size and Delivery Fee
 function pizzaCost(){
     var cost = 0;
     $("input[type='radio']:checked").each(function(){
@@ -20,11 +21,7 @@ $().ready(function(){
     });
 });
 
-//Size
 
-//Crust and sauce
-
-//Toppings
 
 //Extras
 
