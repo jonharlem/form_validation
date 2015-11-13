@@ -10,9 +10,10 @@
 
 	</header>
 
-	<form action="index.html" method="get" id="size">
-		<div class="top">
-			<fieldset class="three">
+
+	<div class="sizeSauceCrust">
+		<form action="index.html" method="get">
+			<fieldset class="three" id="size">
 				<legend>Size</legend>
 
 				<input type="radio" name="size" value="small" />
@@ -26,26 +27,10 @@
 				<input type="radio" name="size" value="large" />
 				<label>Large</label>
 				<br>
-
 			</fieldset>
-
-			<fieldset class="three" id="crust">
-				<legend>Crust</legend>
-
-				<input type="radio" name="size" value="white" />
-				<label>White</label>
-				<br>
-				
-				<input type="radio" name="size" value="wheat" />
-				<label>Wheat</label>
-				<br>
-
-				<input type="radio" name="size" value="gluten" />
-				<label>Gluten Free</label>
-				<br>
-
-			</fieldset>
-
+		</form>
+		
+		<form>
 			<fieldset class="three" id="sauce">
 				<legend>Sauce</legend>
 
@@ -62,7 +47,27 @@
 				<br>
 
 			</fieldset>
-		</div>
+		</form>
+
+		<form>
+			<fieldset class="three" id="crust">
+				<legend>Crust</legend>
+
+				<input type="radio" name="size" value="white" />
+				<label>White</label>
+				<br>
+				
+				<input type="radio" name="size" value="wheat" />
+				<label>Wheat</label>
+				<br>
+
+				<input type="radio" name="size" value="gluten" />
+				<label>Gluten Free</label>
+				<br>
+
+			</fieldset>
+		</form>	
+	</div>
 <!-- TOPPINGS -->
 		<fieldset class="toppings">
 
@@ -70,23 +75,23 @@
 
 			<div class="container" id="left">
 
-				<input type="radio" name="size" value="sausage" />
+				<input type="checkbox" name="topping" value="sausage" />
 				<label>sausage</label>
 				<br>
 				
-				<input type="radio" name="size" value="pepperoni" />
+				<input type="checkbox" name="topping" value="pepperoni" />
 				<label>pepperoni</label>
 				<br>
 
-				<input type="radio" name="size" value="salami" />
+				<input type="checkbox" name="topping" value="salami" />
 				<label>salami</label>
 				<br>
 
-				<input type="radio" name="size" value="ham" />
+				<input type="checkbox" name="topping" value="ham" />
 				<label>ham</label>
 				<br>
 
-				<input type="radio" name="size" value="feta" />
+				<input type="checkbox" name="topping" value="feta" />
 				<label>feta cheese</label>
 				<br>
 
@@ -94,37 +99,40 @@
 
 			<div class="container" id="center">
 
-				<input type="radio" name="size" value="banana" />
-				<label>banana peppers</label>
-				<br>
-
-				<input type="radio" name="size" value="jalapeno" />
+				<input type="checkbox" name="topping" value="jalapeno" />
 				<label>jalapeno</label>
 				<br>
 
-				<input type="radio" name="size" value="onion" />
+				<input type="checkbox" name="topping" value="onion" />
 				<label>onion</label>
 				<br>
 
-				<input type="radio" name="size" value="pineapple" />
+				<input type="checkbox" name="topping" value="pineapple" />
 				<label>pineapple</label>
 				<br>
 
-				<input type="radio" name="size" value="shrooms" />
+				<input type="checkbox" name="topping" value="shrooms" />
 				<label>shrooms</label>
+				<br>
+
+				<input type="checkbox" name="topping" value="banana" />
+				<label>banana peppers</label>
 				<br>
 
 			</div>
 
 			<div class="container" id="right">
+				<fieldset>
+					<legend>Extras $0.50</legend>
+					<input type="checkbox" name="topping" value="chicken" />
+					<label>chicken</label>
+					<br>
 
-				<input type="radio" name="size" value="chicken" />
-				<label>chicken (+$0.50 extra)</label>
-				<br>
+					<input type="checkbox" name="topping" value="bacon" />
+					<label>bacon</label>
+					<br>
+				</fieldset>
 
-				<input type="radio" name="size" value="bacon" />
-				<label>bacon (+$0.50 extra)</label>
-				<br>
 
 			</div>
 
@@ -134,18 +142,25 @@
 
 
 		</fieldset>
+
 		<div>
 			<div>
 			<fieldset class="name">
 				<legend>Pickup or Delivery</legend>
 				
-				<input type="radio" name="size" value="pickup" class="delivery" />
-					<label>pickup</label>
-					<br>
+				<div id="deliveryRight">
+					<input type="radio" name="size" value="pickup"/>
+					<label class="delivery">pickup</label>
+					<br>	
+				</div>
+
 				
-				<input type="radio" name="size" value="delivery" class="delivery"  />
-					<label>delivery</label>
+				<div id="deliveryLeft">
+					<input type="radio" name="size" value="delivery"/>
+					<label class="delivery">delivery</label>
 					<br>
+				</div>
+				
 
 				<label class="title" for="name">
 					<input type="text" name="name" size="30" maxlength="25" placeholder="Name">
@@ -172,9 +187,7 @@
 			
 				<textarea rows="5" cols="30" id="comments" placeholder="Note for the delivery guy"></textarea>
 				<br />
-				<div class="submit">
-					<input type="submit" value="Submit" />
-				</div>	
+
 			</fieldset>		
 			</div>
 			
