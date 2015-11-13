@@ -3,6 +3,7 @@
 <head>
 	<title>Pizza Form</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="javascript" type="text/javascript" href="script.js"> -->
 </head>
 <body>
 	<header>
@@ -16,15 +17,15 @@
 			<fieldset class="three" id="size">
 				<legend>Size</legend>
 
-				<input type="radio" name="size" value="small" />
+				<input type="radio" name="size" value="10" />
 				<label>Small</label>
 				<br>
 				
-				<input type="radio" name="size" value="medium" />
+				<input type="radio" name="size" value="15" />
 				<label>Medium</label>
 				<br>
 
-				<input type="radio" name="size" value="large" />
+				<input type="radio" name="size" value="20" />
 				<label>Large</label>
 				<br>
 			</fieldset>
@@ -34,15 +35,15 @@
 			<fieldset class="three" id="sauce">
 				<legend>Sauce</legend>
 
-				<input type="radio" name="size" value="sausauge" />
+				<input type="radio" name="size" value="0" />
 				<label>tomato</label>
 				<br>
 				
-				<input type="radio" name="size" value="bbq" />
+				<input type="radio" name="size" value="0" />
 				<label>bbq</label>
 				<br>
 
-				<input type="radio" name="size" value="cream" />
+				<input type="radio" name="size" value="0" />
 				<label>cream</label>
 				<br>
 
@@ -53,15 +54,15 @@
 			<fieldset class="three" id="crust">
 				<legend>Crust</legend>
 
-				<input type="radio" name="size" value="white" />
+				<input type="radio" name="size" value="0" />
 				<label>White</label>
 				<br>
 				
-				<input type="radio" name="size" value="wheat" />
+				<input type="radio" name="size" value="0" />
 				<label>Wheat</label>
 				<br>
 
-				<input type="radio" name="size" value="gluten" />
+				<input type="radio" name="size" value="0" />
 				<label>Gluten Free</label>
 				<br>
 
@@ -75,23 +76,23 @@
 
 			<div class="container" id="left">
 
-				<input type="checkbox" name="topping" value="sausage" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>sausage</label>
 				<br>
 				
-				<input type="checkbox" name="topping" value="pepperoni" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>pepperoni</label>
 				<br>
 
-				<input type="checkbox" name="topping" value="salami" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>salami</label>
 				<br>
 
-				<input type="checkbox" name="topping" value="ham" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>ham</label>
 				<br>
 
-				<input type="checkbox" name="topping" value="feta" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>feta cheese</label>
 				<br>
 
@@ -99,23 +100,23 @@
 
 			<div class="container" id="center">
 
-				<input type="checkbox" name="topping" value="jalapeno" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>jalapeno</label>
 				<br>
 
-				<input type="checkbox" name="topping" value="onion" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>onion</label>
 				<br>
 
-				<input type="checkbox" name="topping" value="pineapple" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>pineapple</label>
 				<br>
 
-				<input type="checkbox" name="topping" value="shrooms" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>shrooms</label>
 				<br>
 
-				<input type="checkbox" name="topping" value="banana" />
+				<input type="checkbox" name="topping" value="0.25" />
 				<label>banana peppers</label>
 				<br>
 
@@ -124,11 +125,11 @@
 			<div class="container" id="right">
 				<fieldset>
 					<legend>Extras $0.50</legend>
-					<input type="checkbox" name="topping" value="chicken" />
+					<input type="checkbox" name="topping" value="0.50" />
 					<label>chicken</label>
 					<br>
 
-					<input type="checkbox" name="topping" value="bacon" />
+					<input type="checkbox" name="topping" value="0.50" />
 					<label>bacon</label>
 					<br>
 				</fieldset>
@@ -149,15 +150,15 @@
 				<legend>Pickup or Delivery</legend>
 				
 				<div id="deliveryRight">
-					<input type="radio" name="size" value="pickup"/>
+					<input type="radio" name="size" value="0"/>
 					<label class="delivery">pickup</label>
 					<br>	
 				</div>
 
 				
 				<div id="deliveryLeft">
-					<input type="radio" name="size" value="delivery"/>
-					<label class="delivery">delivery</label>
+					<input type="radio" name="size" value="5"/>
+					<label class="delivery">delivery ($5)</label>
 					<br>
 				</div>
 				
@@ -193,16 +194,27 @@
 			
 			<div id="cost">
 				<form>
-					<legend>Total</legend>
-					
-					<div class="submit">
-						<input type="submit" value="Submit" />
-					</div>	
+
+					<fieldset>
+						<legend>Total</legend>
+
+						Total: $<span id="totalCost">0</span>
+
+						<div class="submit">
+							<input type="submit" value="Submit" />
+						</div>	
+
+
+					</fieldset>
+
+
 				</form>
 			</div>
 		</div>
 		
 	</form>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
